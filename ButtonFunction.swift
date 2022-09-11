@@ -42,8 +42,8 @@ enum PrimaryFunctions: String, CaseIterable, Identifiable { // Main button
     case dec // . (decimal)
     
     // Column #4
-    case arPL // Arrow placeholder ---->
-    // Another arrow placeholder here
+    case arPL1 // Arrow placeholder 1
+    case arPL2 // Arrow placeholder 2
     case varia // vars (variable)
     case tangent // tan (tangent)
     case clParen // ) (close parentheses)
@@ -53,8 +53,8 @@ enum PrimaryFunctions: String, CaseIterable, Identifiable { // Main button
     case neg // (-) (Negative)
     
     // Column #5
-    // Another arrow placeholder here
-    // Another arrow placeholder here
+    case arPL3 // Arrow placeholder 3
+    case arPL4 // Arrow placeholder 4
     case clr // clear
     case expo // ^ (exponent)
     case divi // / (division)
@@ -84,7 +84,7 @@ enum SecondaryFunctions: String, CaseIterable, Identifiable { // 2nd function
     case tabl // table
     
     // Column #1
-    case ph1 // Placeholder
+    case blankPH1 // Blank placeholder 1
     case alock // A-lock (Alpha lock)
     case test // test
     case matr // matrix
@@ -106,7 +106,112 @@ enum SecondaryFunctions: String, CaseIterable, Identifiable { // 2nd function
     case cat // catalog
     
     // Column #3
+    case ins // ins (insert)
+    case lst // list
+    case drw // draw
+    case arccos // cos^-1 (arccosine)
+    case opCurl // { (open curly bracket)
+    case vv // v
+    case lfive // L5
+    case ltwo // L2
+    case iii // *i*
     
+    // Column #4
+    case arPL1 // Arrow placeholder 1
+    case arPL2 // Arrow placeholder 2
+    case distr // distr
+    case arctan // tan^-1 (arctangent)
+    case clCurl // } (closing curly bracket)
+    case ww // w
+    case lsix // L6
+    case lthree // L3
+    case ans // ans
+    
+    // Column #5
+    case arPL3 // Arrow placeholder 3
+    case arPL4 // Arrow placeholder 4
+    case blankPH2 // Blank placeholder 2
+    case npi // Pi
+    case eee // e
+    case opBrack // [ (Open bracket)
+    case clBrack // ] (Close bracket)
+    case mem // mem
+    case entr // entry
+    
+    
+    var id: UUID {
+        UUID()
+    }
+    /*
+     
+    var name: String { // As it is shown on the calculator
+        
+    }
+     */
+}
+
+enum TertiaryFunctions: String, CaseIterable, Identifiable { // Alpha function
+    // Top Row
+    case f1 // f1
+    case f2 // f2
+    case f3 // f3
+    case f4 // f4
+    case f5 // f5
+    
+    // Column #1
+    case blankPH1 // Blank placeholder 1
+    case blankPH2 // Blank placeholder 2
+    case letterA // A
+    case letterD // D
+    case letterI // I
+    case letterN // N
+    case letterS // S
+    case letterX // X
+    case blankPH3 // Blank placeholder 3
+    
+    // Column #2
+    case blankPH4 // Blank placeholder 4
+    case frac // Fraction
+    case letterB // B
+    case letterE // E
+    case letterJ // J
+    case letterO // O
+    case letterT // T
+    case letterY // Y
+    case underBr // Underbracket
+    
+    // Column #3
+    case blankPH5 // Blank placeholder 5
+    case blankPH6 // Blank placeholder 6
+    case letterC // C
+    case letterF // F
+    case letterK // K
+    case letterP // P
+    case letterU // U
+    case letterZ // Z
+    case col // : (colon)
+    
+    // Column #4
+    case arPL1 // Arrow placeholder 1
+    case arPL2 // Arrow placeholder 2
+    case blankPH7 // Blank placeholder 7
+    case letterG // G
+    case letterL // L
+    case letterQ // Q
+    case letterV // V
+    case theta // theta
+    case ques // ?
+    
+    // Column #5
+    case arPL3 // Arrow placeholder 3
+    case arPL4 // Arrow placeholder 4
+    case blankPH8 // Blank placeholder 8
+    case letterH // H
+    case letterM // M
+    case letterR // R
+    case letterW // W
+    case quotes // "
+    case solve // solve
     
     
     var id: UUID {
