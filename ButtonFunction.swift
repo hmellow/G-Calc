@@ -68,11 +68,70 @@ enum PrimaryFunctions: String, CaseIterable, Identifiable { // Main button
         UUID()
     }
     
-    /*
     var name: String { // As it is shown on the calculator
-        
+        switch self {
+            // Top Row
+            case .inFn: return "y="
+            case .win: return "window"
+            case .zoo: return "zoom"
+            case .tra: return "trace"
+            case .graph: return "graph"
+                
+            // Column #1
+            case .sec: return "2nd"
+            case .alph: return "alpha"
+            case .math: return "math"
+            case .inv: return "x^-1" // RD: exp
+            case .squ: return "x^2" // RD: exp
+            case .loga: return "log"
+            case .natloga: return "ln"
+            case .sto: return "sto->" // RD: arrow
+            case .on: return "on"
+                
+            // Column #2
+            case .mod: return "mode"
+            case .indep: return "X,T,θ,n" // RD: cursive theta
+            case .apps: return "apps"
+            case .sine: return "sin"
+            case .com: return ","
+            case .seven: return "7"
+            case .four: return "4"
+            case .onn: return "1"
+            case .zer: return "0"
+                
+            // Column #3
+            case .del: return "del"
+            case .stats: return "stat"
+            case .prgm: return "prgm"
+            case .cosine: return "cos"
+            case .opParen: return "("
+            case .eight: return "8"
+            case .five: return "5"
+            case .two: return "2"
+            case .dec: return "."
+                
+            // Column #4
+            case .varia: return "vars"
+            case .tangent: return "tan"
+            case .clParen: return ")"
+            case .nine: return "9"
+            case .six: return "6"
+            case .three: return "3"
+            case .neg: return "(-)"
+                
+            // Column #5
+            case .clr: return "clear"
+            case .expo: return "^" // RD: Large exp. arrow
+            case .divi: return "÷" // RD: If symbol does not work
+            case .mult: return "X" // RD: Symmetrical X
+            case .subt: return "-" // RD: Symbol
+            case .addi: return "+" // RD: Symbol
+            case .enter: return "enter"
+            
+            // Placeholders
+            case .arPL1, .arPL2, .arPL3, .arPL4: return ""
+        }
     }
-     */
 }
 
 enum SecondaryFunctions: String, CaseIterable, Identifiable { // 2nd function
@@ -224,3 +283,4 @@ enum TertiaryFunctions: String, CaseIterable, Identifiable { // Alpha function
     }
      */
 }
+
