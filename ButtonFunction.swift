@@ -201,12 +201,69 @@ enum SecondaryFunctions: String, CaseIterable, Identifiable { // 2nd function
     var id: UUID {
         UUID()
     }
-    /*
      
     var name: String { // As it is shown on the calculator
-        
+        switch self {
+            // Top Row
+            case .stplot: return "stat plot"
+            case .tblset: return "tblset"
+            case .form: return "format"
+            case .calc: return "calc"
+            case .tabl: return "table"
+                
+            // Column #1
+            case .alock: return "A-lock"
+            case .test: return "test"
+            case .matr: return "matrix"
+            case .sqt: return "^1/2" // RD: sqrt radical
+            case .tenexp: return "10^x" // RD: exp
+            case .eexp: return "e^x" // RD: exp
+            case .rcl: return "rcl"
+            case .off: return "off"
+                
+            // Column #2
+            case .quit: return "quit"
+            case .lnk: return "link"
+            case .ang: return "angle"
+            case .arcsin: return "sin^-1" // RD: exp
+            case .scinot: return "EE"
+            case .uu: return "u"
+            case .lfour: return "L4"
+            case .lone: return "L1"
+            case .cat: return "catalog"
+                
+            // Column #3
+            case .ins: return "ins"
+            case .lst: return "list"
+            case .drw: return "draw"
+            case .arccos: return "cos^-1" // RD: exp
+            case .opCurl: return "{"
+            case .vv: return "v"
+            case .lfive: return "L5"
+            case .ltwo: return "L2"
+            case .iii: return "i" // RD: cursive
+                
+            // Column #4
+            case .distr: return "distr"
+            case .arctan: return "tan^-1" // RD: exp
+            case .clCurl: return "}"
+            case .ww: return "w"
+            case .lsix: return "L6"
+            case .lthree: return "L3"
+            case .ans: return "ans"
+                
+            // Column #5
+            case .npi: return "π"
+            case .eee: return "e"
+            case .opBrack: return "["
+            case .clBrack: return "]"
+            case .mem: return "mem"
+            case .entr: return "entry"
+                
+            // Placeholders
+            case .blankPH1, .blankPH2, .arPL1, .arPL2, .arPL3, .arPL4: return ""
+        }
     }
-     */
 }
 
 enum TertiaryFunctions: String, CaseIterable, Identifiable { // Alpha function
@@ -276,11 +333,61 @@ enum TertiaryFunctions: String, CaseIterable, Identifiable { // Alpha function
     var id: UUID {
         UUID()
     }
-    /*
      
     var name: String { // As it is shown on the calculator
-        
+        switch self {
+            // Top Row
+            case .f1: return "f1"
+            case .f2: return "f2"
+            case .f3: return "f3"
+            case .f4: return "f4"
+            case .f5: return "f5"
+                
+            // Column #1
+            case .letterA: return "A"
+            case .letterD: return "D"
+            case .letterI: return "I"
+            case .letterN: return "N"
+            case .letterS: return "S"
+            case .letterX: return "X"
+                
+            // Column #2
+            case .frac: return "[]/[]" // RD: fraction symbol
+            case .letterB: return "B"
+            case .letterE: return "E"
+            case .letterJ: return "J"
+            case .letterO: return "O"
+            case .letterT: return "T"
+            case .letterY: return "Y"
+            case .underBr: return "_" // RD: Underbracket
+                
+            // Column #3
+            case .letterC: return "C"
+            case .letterF: return "F"
+            case .letterK: return "K"
+            case .letterP: return "P"
+            case .letterU: return "U"
+            case .letterZ: return "Z"
+            case .col: return ":"
+                
+            // Column #4
+            case .letterG: return "G"
+            case .letterL: return "L"
+            case .letterQ: return "Q"
+            case .letterV: return "V"
+            case .theta: return "θ" // RD: cursive
+            case .ques: return "?"
+                
+            // Column #5
+            case .letterH: return "H"
+            case .letterM: return "M"
+            case .letterR: return "R"
+            case .letterW: return "W"
+            case .quotes: return "\""
+            case .solve: return "solve"
+            
+            // Placeholders
+            case .blankPH1, .blankPH2, .blankPH3, .blankPH4, .blankPH5, .blankPH6, .blankPH7, .blankPH8, .arPL1, .arPL2, .arPL3, .arPL4: return ""
+        }
     }
-     */
 }
-
