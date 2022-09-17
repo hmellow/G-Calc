@@ -1,14 +1,9 @@
+import Foundation
 import SwiftUI
 
 enum PrimaryFunctions: String, CaseIterable, Identifiable { // Main button
-    // Top Row
-    case inFn // y= (insert function)
-    case win // window
-    case zoo // zoom
-    case tra // trace
-    case graph // graph
-    
     // Column #1
+    case inFn // y= (insert function)
     case sec // 2nd
     case alph // Alpha
     case math // Math
@@ -20,6 +15,7 @@ enum PrimaryFunctions: String, CaseIterable, Identifiable { // Main button
     case on // Calculator on
     
     // Column #2
+    case win // window
     case mod // Mode
     case indep // X,T,theta,n (independent variable)
     case apps // Apps
@@ -31,6 +27,7 @@ enum PrimaryFunctions: String, CaseIterable, Identifiable { // Main button
     case zer // 0
     
     // Column #3
+    case zoo // zoom
     case del // del (delete)
     case stats // stat (statistics)
     case prgm // prgm (program) [may remove/replace]
@@ -42,6 +39,7 @@ enum PrimaryFunctions: String, CaseIterable, Identifiable { // Main button
     case dec // . (decimal)
     
     // Column #4
+    case tra // trace
     case arPL1 // Arrow placeholder 1
     case arPL2 // Arrow placeholder 2
     case varia // vars (variable)
@@ -53,6 +51,7 @@ enum PrimaryFunctions: String, CaseIterable, Identifiable { // Main button
     case neg // (-) (Negative)
     
     // Column #5
+    case graph // graph
     case arPL3 // Arrow placeholder 3
     case arPL4 // Arrow placeholder 4
     case clr // clear
@@ -70,14 +69,8 @@ enum PrimaryFunctions: String, CaseIterable, Identifiable { // Main button
     
     var name: String { // As it is shown on the calculator
         switch self {
-            // Top Row
-            case .inFn: return "y="
-            case .win: return "window"
-            case .zoo: return "zoom"
-            case .tra: return "trace"
-            case .graph: return "graph"
-                
             // Column #1
+            case .inFn: return "y="
             case .sec: return "2nd"
             case .alph: return "alpha"
             case .math: return "math"
@@ -89,6 +82,7 @@ enum PrimaryFunctions: String, CaseIterable, Identifiable { // Main button
             case .on: return "on"
                 
             // Column #2
+            case .win: return "window"
             case .mod: return "mode"
             case .indep: return "X,T,θ,n" // RD: cursive theta
             case .apps: return "apps"
@@ -100,6 +94,7 @@ enum PrimaryFunctions: String, CaseIterable, Identifiable { // Main button
             case .zer: return "0"
                 
             // Column #3
+            case .zoo: return "zoom"
             case .del: return "del"
             case .stats: return "stat"
             case .prgm: return "prgm"
@@ -111,6 +106,7 @@ enum PrimaryFunctions: String, CaseIterable, Identifiable { // Main button
             case .dec: return "."
                 
             // Column #4
+            case .tra: return "trace"
             case .varia: return "vars"
             case .tangent: return "tan"
             case .clParen: return ")"
@@ -120,6 +116,7 @@ enum PrimaryFunctions: String, CaseIterable, Identifiable { // Main button
             case .neg: return "(-)"
                 
             // Column #5
+            case .graph: return "graph"
             case .clr: return "clear"
             case .expo: return "^" // RD: Large exp. arrow
             case .divi: return "÷" // RD: If symbol does not work
@@ -135,14 +132,8 @@ enum PrimaryFunctions: String, CaseIterable, Identifiable { // Main button
 }
 
 enum SecondaryFunctions: String, CaseIterable, Identifiable { // 2nd function
-    // Top Row
-    case stplot // stat plot
-    case tblset // tblset
-    case form // format
-    case calc // calc
-    case tabl // table
-    
     // Column #1
+    case stplot // stat plot
     case blankPH1 // Blank placeholder 1
     case alock // A-lock (Alpha lock)
     case test // test
@@ -154,6 +145,7 @@ enum SecondaryFunctions: String, CaseIterable, Identifiable { // 2nd function
     case off // off
     
     // Column #2
+    case tblset // tblset
     case quit // quit
     case lnk // link [will remove/replace]
     case ang // angle
@@ -165,6 +157,7 @@ enum SecondaryFunctions: String, CaseIterable, Identifiable { // 2nd function
     case cat // catalog
     
     // Column #3
+    case form // format
     case ins // ins (insert)
     case lst // list
     case drw // draw
@@ -176,6 +169,7 @@ enum SecondaryFunctions: String, CaseIterable, Identifiable { // 2nd function
     case iii // *i*
     
     // Column #4
+    case calc // calc
     case arPL1 // Arrow placeholder 1
     case arPL2 // Arrow placeholder 2
     case distr // distr
@@ -187,6 +181,7 @@ enum SecondaryFunctions: String, CaseIterable, Identifiable { // 2nd function
     case ans // ans
     
     // Column #5
+    case tabl // table
     case arPL3 // Arrow placeholder 3
     case arPL4 // Arrow placeholder 4
     case blankPH2 // Blank placeholder 2
@@ -204,14 +199,8 @@ enum SecondaryFunctions: String, CaseIterable, Identifiable { // 2nd function
      
     var name: String { // As it is shown on the calculator
         switch self {
-            // Top Row
-            case .stplot: return "stat plot"
-            case .tblset: return "tblset"
-            case .form: return "format"
-            case .calc: return "calc"
-            case .tabl: return "table"
-                
             // Column #1
+            case .stplot: return "stat plot"
             case .alock: return "A-lock"
             case .test: return "test"
             case .matr: return "matrix"
@@ -222,6 +211,7 @@ enum SecondaryFunctions: String, CaseIterable, Identifiable { // 2nd function
             case .off: return "off"
                 
             // Column #2
+            case .tblset: return "tblset"
             case .quit: return "quit"
             case .lnk: return "link"
             case .ang: return "angle"
@@ -233,6 +223,7 @@ enum SecondaryFunctions: String, CaseIterable, Identifiable { // 2nd function
             case .cat: return "catalog"
                 
             // Column #3
+            case .form: return "format"
             case .ins: return "ins"
             case .lst: return "list"
             case .drw: return "draw"
@@ -244,6 +235,7 @@ enum SecondaryFunctions: String, CaseIterable, Identifiable { // 2nd function
             case .iii: return "i" // RD: cursive
                 
             // Column #4
+            case .calc: return "calc"
             case .distr: return "distr"
             case .arctan: return "tan^-1" // RD: exp
             case .clCurl: return "}"
@@ -253,6 +245,7 @@ enum SecondaryFunctions: String, CaseIterable, Identifiable { // 2nd function
             case .ans: return "ans"
                 
             // Column #5
+            case .tabl: return "table"
             case .npi: return "π"
             case .eee: return "e"
             case .opBrack: return "["
@@ -267,14 +260,8 @@ enum SecondaryFunctions: String, CaseIterable, Identifiable { // 2nd function
 }
 
 enum TertiaryFunctions: String, CaseIterable, Identifiable { // Alpha function
-    // Top Row
-    case f1 // f1
-    case f2 // f2
-    case f3 // f3
-    case f4 // f4
-    case f5 // f5
-    
     // Column #1
+    case f1 // f1
     case blankPH1 // Blank placeholder 1
     case blankPH2 // Blank placeholder 2
     case letterA // A
@@ -286,6 +273,7 @@ enum TertiaryFunctions: String, CaseIterable, Identifiable { // Alpha function
     case blankPH3 // Blank placeholder 3
     
     // Column #2
+    case f2 // f2
     case blankPH4 // Blank placeholder 4
     case frac // Fraction
     case letterB // B
@@ -297,6 +285,7 @@ enum TertiaryFunctions: String, CaseIterable, Identifiable { // Alpha function
     case underBr // Underbracket
     
     // Column #3
+    case f3 // f3
     case blankPH5 // Blank placeholder 5
     case blankPH6 // Blank placeholder 6
     case letterC // C
@@ -308,6 +297,7 @@ enum TertiaryFunctions: String, CaseIterable, Identifiable { // Alpha function
     case col // : (colon)
     
     // Column #4
+    case f4 // f4
     case arPL1 // Arrow placeholder 1
     case arPL2 // Arrow placeholder 2
     case blankPH7 // Blank placeholder 7
@@ -319,6 +309,7 @@ enum TertiaryFunctions: String, CaseIterable, Identifiable { // Alpha function
     case ques // ?
     
     // Column #5
+    case f5 // f5
     case arPL3 // Arrow placeholder 3
     case arPL4 // Arrow placeholder 4
     case blankPH8 // Blank placeholder 8
@@ -336,14 +327,8 @@ enum TertiaryFunctions: String, CaseIterable, Identifiable { // Alpha function
      
     var name: String { // As it is shown on the calculator
         switch self {
-            // Top Row
-            case .f1: return "f1"
-            case .f2: return "f2"
-            case .f3: return "f3"
-            case .f4: return "f4"
-            case .f5: return "f5"
-                
             // Column #1
+            case .f1: return "f1"
             case .letterA: return "A"
             case .letterD: return "D"
             case .letterI: return "I"
@@ -352,6 +337,7 @@ enum TertiaryFunctions: String, CaseIterable, Identifiable { // Alpha function
             case .letterX: return "X"
                 
             // Column #2
+            case .f2: return "f2"
             case .frac: return "[]/[]" // RD: fraction symbol
             case .letterB: return "B"
             case .letterE: return "E"
@@ -362,6 +348,7 @@ enum TertiaryFunctions: String, CaseIterable, Identifiable { // Alpha function
             case .underBr: return "_" // RD: Underbracket
                 
             // Column #3
+            case .f3: return "f3"
             case .letterC: return "C"
             case .letterF: return "F"
             case .letterK: return "K"
@@ -371,6 +358,7 @@ enum TertiaryFunctions: String, CaseIterable, Identifiable { // Alpha function
             case .col: return ":"
                 
             // Column #4
+            case .f4: return "f4"
             case .letterG: return "G"
             case .letterL: return "L"
             case .letterQ: return "Q"
@@ -379,6 +367,7 @@ enum TertiaryFunctions: String, CaseIterable, Identifiable { // Alpha function
             case .ques: return "?"
                 
             // Column #5
+            case .f5: return "f5"
             case .letterH: return "H"
             case .letterM: return "M"
             case .letterR: return "R"
